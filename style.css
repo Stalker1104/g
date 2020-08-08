@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Cousine&display=swap');
+#input_div{
+    display: flex;
+    flex-direction:column
+}
+.input_div_in{
+    width: 100%;
+    height: 10%;
+    margin-bottom: 10px;
+}
