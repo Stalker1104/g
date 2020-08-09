@@ -1,20 +1,20 @@
 /*variables*/{
     var all_units={
-        names:["ТГ-5"   ,"КВ-2"  ,"ЗиС-41"],
-        size: ["6x10"   ,"3x4"   ,"2x3"   ],
-        dmg:  ["55"     ,"170"   ,"90"    ],
-        hp:   ["270"    ,"80"    ,"20"    ],
-        dv:   ["4"      ,"2"     ,"7"     ],
-        da:   ["2-7,3"  ,"1-12,5","1-25,3"],
-        buy:  ["200"    ,"150"   ,"100"   ],
-        rev:  ["160"    ,"95"    ,"80"    ],
-        src:  ["тг5"    ,"кв-2"  ,"zis-30"]
+        names:[],
+        size: [],
+        dmg:  [],
+        hp:   [],
+        dv: [],
+        da:  [],
+        buy:  [],
+        rev:  [],
+
     }
 }
 
 /*functions*/{
     function add_main() {
-        if (input_1.value!="" && input_2.value!="" && input_3.value!="" && input_4.value!="" && input_5.value!="" && input_6.value!="" && input_7.value!="" && input_8.value!="") {
+        //if (input_1.value!="" && input_2.value!="" && input_3.value!="" && input_4.value!="" && input_5.value!="" && input_6.value!="" && input_7.value!="" && input_8.value!="") {
             all_units.names[all_units.names.length]=input_1.value
             all_units.size [all_units.size .length]=input_2.value
             all_units.dmg  [all_units.dmg  .length]=input_3.value
@@ -33,9 +33,9 @@
             input_7.value=""
             input_8.value=""
 
-        }else{
+       /* }else{
             alert("Вы не всё ввели, сударь!")
-        }
+        }*/
     }
     function end_main() {
         var sure=confirm("Вы уверены? Вы не сможете восстановить прогресс!")
